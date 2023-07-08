@@ -1,0 +1,32 @@
+The Standard Template Library or STL in C++ is a collection of template classes and template functions that provide a generic way of programming. It is a library of container classes, algorithms, and iterators.
+
+Components of STL in C++
+
+Containers
+Iterators
+Algorithms
+Function objects or Functors
+
+Containers => A container is a holder object that stores other objects as elements. It is used to implement different data structures.
+They are implemented as class templates (templates use data types as parameters), allowing greater flexibility in the types supported as elements.
+The containers manage storage space for its elements and provide member functions to access them directly or through iterators.
+They replicate the most commonly used data structures like queues (queue), dynamic arrays (vector), stacks (stack), linked lists (list), queues (queue), heaps (priority_queue), trees (set), associative arrays (map), and many others.
+
+Sequence Containers => Sequence containers implement data structures that can be accessed sequentially via their position.It preserves the insertion order of elements.These are internally implemented as arrays or linked lists.
+Example => Array , Vector , Deque , List , Forward List.
+
+
+Associative Container =>Associative container is an ordered (sorted) container that provides a fast lookup of objects based on the keys, unlike a sequence container which uses position.A value is stored corresponding to each key.They are internally implemented as binary tree data structures. This results in logarithmic time operations -- 
+O(logn).
+Example => Set , Multiset , Map , Multimap
+
+Unordered Associative Container => Unordered Associative Container is an unsorted version of Associative Container.
+It is important to note that insertion order is not maintained. Elements are in random order.
+These are internally implemented as a hash table data structure. This results, on average, in constant time operations -- 
+O(1).
+Example => Unordered Set ,Unordered Multiset ,Unordered Map ,Unordered Multimap.
+
+Container Adapters =>STL in C++ also consists of a special type of container that adapts other containers to give a different interface with restricted functionality. Hence the name Container Adapters.
+The underlying container is encapsulated in such a way that its elements are accessed by the members of the container adaptor independently of the underlying container class used.
+Unlike other containers, values are not directly initialized but with the help of other supported methods.
+Example => Stack , Queue , Priority Queue
