@@ -22,11 +22,13 @@ int main(void)
     // s.emplace(100);
     cout << "Top element of the stack => " << s.top() << endl;
 
-    stack<int>s2;
+    stack<int> s2;
     // This function is used to swap the contents of one stack with another stack of same type but the size may vary => Time Complexity: O(1)
     s2.swap(s);
-    while(!s2.empty()){
+    while (!s2.empty())
+    {
         cout << s2.top() << "\t";
+
         s2.pop();
     }
     return 0;
